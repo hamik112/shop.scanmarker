@@ -1,0 +1,10 @@
+development:
+  password: 8ca1df45bd525f471db1e904483f899f
+  theme_id: "176306572"
+  store: scanmarker-com.myshopify.com
+  
+production:
+  password: 8ca1df45bd525f471db1e904483f899f
+  theme_id: "176305548"
+  store: scanmarker-com.myshopify.com
+
