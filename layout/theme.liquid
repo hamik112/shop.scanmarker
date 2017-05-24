@@ -84,7 +84,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  {% if template.suffix contains 'lp' %} {{ content_for_layout }} {% else %}
+  {% if template.suffix contains 'lp' or template.suffix contains 'embed' %} {{ content_for_layout }} {% else %}
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
   <div id="SearchDrawer" class="search-bar drawer drawer--top">
