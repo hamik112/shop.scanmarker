@@ -1,0 +1,7 @@
+<meta name="robots" content="none,noarchive,nosnippet,noodp,notranslate,noimageindex">
+{% if template.suffix == 'lp1' %}
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  	{{ 'bootstrap.min.scss.css' | asset_url | stylesheet_tag }}  
+  	{{ 'lp1.scss.css' | asset_url | stylesheet_tag }}  
+  	<script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+{% endif %}

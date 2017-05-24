@@ -70,6 +70,10 @@
 
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+  
+  {% if template.suffix contains 'lp' %}
+    {% include 'lps' %}
+  {% endif %}
 
   {{ content_for_header }}
 </head>
@@ -80,6 +84,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  {% if template.suffix contains 'lp' %} {{ content_for_layout }} {% else %}
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
   <div id="SearchDrawer" class="search-bar drawer drawer--top">
@@ -113,5 +118,6 @@
     {% section 'footer' %}
 
   </div>
+  {% endif %}
 </body>
 </html>

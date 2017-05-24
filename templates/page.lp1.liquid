@@ -1,0 +1,225 @@
+<script type="text/javascript">
+  window.shopClient = ShopifyBuy.buildClient({
+    accessToken: 'd0d2b5cf52bd5a315dbdb874d5a0e1ed',
+    domain: 'scanmarker.shop',
+    appId: '6'
+  });
+</script>
+
+<!--<div id="promo-popup">
+		<div class="inner">
+				<span>SCANFB</span>
+				<div id="promo-close">CONTINUE</div>
+		</div>
+</div>-->
+    
+<header>
+		<div id="top-line" class="hidden-xs container-fluid">
+				<div class="inner">
+						<div class="row">            
+								<div class="col-xs-12">
+										Call us toll free: <strong>(+1) 646 553-4196</strong> &nbsp;&nbsp;Email: <strong>enquiry@scanmarker.com</strong>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div id="logo" class="container-fluid">
+				<div class="inner">
+						<div class="row">
+								<div class="col-xs-12">
+										<img src="{{ 'logolp1.png' | asset_url }}">
+								</div>
+						</div>
+				</div>
+		</div>
+		<nav id="main-nav" class="hidden-xs container-fluid">
+				<div class="inner">
+						<div class="row">
+								<div class="col-xs-12">
+										<a href="#">Features</a>                        
+								</div>
+						</div>
+				</div>
+		</nav>
+</header>
+<main class="container-fluid">
+		<div class="row" id="two-products">
+				<div class="col-xs-12 col-sm-6">
+						<img src="{{ 'air-wifi.png' | asset_url }}" />
+						
+					<div id="buy-top"></div>
+					<script type="text/javascript">                        
+						shopClient.fetchProduct('10826881868').then(function(product) {
+							var btn = '<a href="' + product.selectedVariant.checkoutUrl(1) + '" class="buynow">Buy Now</a>';
+							document.getElementById('buy-top').innerHTML = btn;
+						});
+					</script>					
+						
+				</div>
+				<div class="col-xs-12 col-sm-6">
+						<img src="{{ 'air-usb.png' | asset_url }}" />
+				</div>
+		</div>
+		<div class="row" id="video-area">
+				<div class="col-xs-12">
+						<img src="{{ 'video.jpg' | asset_url }}" class="hidden-xs"/>
+		<img src="{{ 'video_mob.jpg' | asset_url }}" class="visible-xs-inline-block"/>
+						<span id="playvideo">Watch the video</span>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-sm-6 col-xs-12 col-md-5" id="gallery-area">
+						<img id="img-1" src="{{ 'scan1.jpg' | asset_url }}" class="active">
+		<img id="img-2" src="{{ 'scan2.jpg' | asset_url }}">
+		<img id="img-3" src="{{ 'scan3.jpg' | asset_url }}">
+		<img id="img-4" src="{{ 'scan4.jpg' | asset_url }}">
+				</div>
+				<div class="col-sm-1 col-xs-12 col-md-1" id="gallery-choose">				
+		<img id="img-1s" src="{{ 'scan1_s.png' | asset_url }}" data-img="1" class="active">
+		<img id="img-2s" src="{{ 'scan2_s.png' | asset_url }}" data-img="2">
+		<img id="img-3s" src="{{ 'scan3_s.png' | asset_url }}" data-img="3">
+		<img id="img-4s" src="{{ 'scan4_s.png' | asset_url }}" data-img="4">				
+				</div>
+	<div class="col-md-1 hidden-xs hidden-sm"></div>
+				<div class="col-sm-5 col-xs-12 col-md-5" id="desc">
+						<img src="{{ 'wifi.png' | asset_url }}">
+		<span class="title">ScanMarker AIR</span>
+		<img src="{{ 'price.png' | asset_url }}" class="hidden-xs price">
+		<img src="{{ 'price_mob.png' | asset_url }}" class="visible-xs-inline-block price">
+		<p>
+			Shipping: <span class="dif">Worldwide</span><br>
+			Warranty: <span class="dif">Full Year</span><br>
+			Refund: <span class="dif">30 Days</span><br>
+		</p>
+		<p>
+			Scan and edit your notes on the go.<br>
+			Scanmarker Air features an ultra-portable design –<br>
+			scan wirelessly via Bluetooth connection to your<br>
+			computer, smartphone or tablet.
+		</p>
+		<p>
+			Use our cutting-edge, patented technology to scan<br>
+			directly into any application or our intuitive mobile<br>
+			apps. Edit, translate, read	aloud and<br>
+			share on any device.
+		</p>
+		<div id="buy-middle"></div>
+						<script type="text/javascript">                        
+							shopClient.fetchProduct('10826881868').then(function(product) {
+								var btn = '<a href="' + product.selectedVariant.checkoutUrl(1) + '" class="buynow">Buy Now</a>';
+								document.getElementById('buy-middle').innerHTML = btn;
+
+							});
+						</script>			
+		<div id="show-features-mob" class="visible-xs-block">Read More</div>				
+				</div>
+		</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div id="show-features" class="hidden-xs">Show more features</div>				
+	</div>
+</div>
+<div class="row" id="show-features-list">
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'hend-scan.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">JUST SLIDE IT ACROSS ANY PRINTED TEXT</span>
+				<p>A revolutionary patented image processing technology is the magic behind Scanmarker. Unlike other products, Scanmarker does not use costly, complicated mechanical components such as wheels and tooth-wheels to measure scanning speed. Instead, the printed text is scanned and captured as a raw image – and processed to a high quality image, ready for recognition by the OCR software.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'pc-mac-mobile.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">SPEEDY RESULTS</span>
+				<p>The digitally formatted text is then instantly transferred into any application on your computer or our intuitive mobile apps ready for easy editing and sharing. All these stages occur within a fraction of a second. 
+*Scanmarker Air version is compatible with mobile devices.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'save-share.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">VERSATILE</span>
+				<p>Scanmarker scans directly into the computer application or web browser of your choice, facilitating effortless retyping and sharing – whether you are using Word documents, Excel, Gmail, Facebook or any other application, the text appears directly where you would like it. Wherever you use your keyboard to type – Scanmarker instantly types it for you.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'scanmartker13-1.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">Translates into over 40 different languages</span>
+				<p>You can translate into over 40 languages. Simply select the language you would like to translate to, slide the pen over your paper document and the translation will appear right where your cursor is blinking in a matter of second.
+
+SUPPORTED LANGUAGES: Albanian, Azerbaijani, Brazilian, Bulgarian, Chinese (S Vert), Chinese (Simple), Chinese (T Vert) Chinese (Traditional), Corsican, Croatian, Czech Danish, Dutch, English, Esperanto, Estonian, Fijian, Finnish, French, Galician, German, Greek, Hebrew, Hungarian, Icelandic, Irish, Italian, Japanese, Japenese Vert, Korean, Korean Vert, Latin, Latvian, Lithuanian, Moldovan, Norwegian, Polish, Portuguese, Romanian, Russian, Scottish Gaelic, Serbian, Slovak, Slovene, Spanish, Swedish, Swiss German, Tagalog, Turkish, Ukranian, Xhosa, Zulu.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'reading-pen.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">READ ALOUD</span>
+				<p>The integrated text-to-speech function can read the text back to you whilst scanning. A great memorizing tool and gives you a clearer understanding and comprehension of the scanned material. This feature has opened up an exciting door of opportunity to enhance the learning process and promote independence for those with dyslexia and other learning disabilities. Scanmarker is an effective tool used in the Special Education sector to help every student achieve academic success.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<img src="{{ 'Barcode-recognition.jpg' | asset_url }}">						
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="title">Barcode CMC7 & BVR recognition</span>
+				<p>To improve your productivity, the digital highlighter can be turned into a reliable and cost-effective barcode scanner. If you need quick access to data from any barcoded material, the pen scanner is the perfect tool.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="buy-bottom"></div>
+				<script type="text/javascript">                        
+					shopClient.fetchProduct('10826881868').then(function(product) {
+						var btn = '<a href="' + product.selectedVariant.checkoutUrl(1) + '" class="buynow">Buy Now</a>';
+						document.getElementById('buy-bottom').innerHTML = btn;
+					});
+				</script>						
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<footer>
+		<div id="footer-inner" class="container-fluid">
+				<div class="row">            
+						<div class="col-xs-12">
+								&copy; TopScan LLC. All Rights Reserved
+						</div>
+				</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="https://scanmarker.shop/pages/terms-conditions" target="_blank">Terms & Conditions</a><br>
+			<a href="https://scanmarker.shop/pages/warranty" target="_blank">Warranty</a><br>
+			<a href="https://scanmarker.shop/pages/shipping" target="_blank">Shipping</a>
+		</div>
+	</div>
+		</div>
+</footer>
+
+<div id="video-popup">
+		<div class="inner">            
+				<div class="body"></div>
+		</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{{ 'lp1.js' | asset_url | script_tag }}
